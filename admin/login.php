@@ -47,18 +47,18 @@
                     <!-- Form -->
                     <div class="row">
                         <div class="col-12">
-                            <form class="form-horizontal m-t-20" id="loginform" action="http://themedesigner.in/demo/adminbite/html/ltr/index.html">
+                            <form class="form-horizontal m-t-20" id="loginform" action="" method="post">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    <input type="text" id="username" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                    <input type="password" id="password" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="form-group text-center">
                                     <div class="col-xs-12 p-b-20">
-                                        <button class="btn btn-block btn-lg btn-info" type="submit">Log In</button>
+                                        <button id="blogin" class="btn btn-block btn-lg btn-info" type="button">Log In</button>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -137,6 +137,28 @@
     $('#to-recover').on("click", function() {
         $("#loginform").slideUp();
         $("#recoverform").fadeIn();
+    });
+    $('#blogin').on('click', function(e){
+        e.preventDefault();
+        var userid = $('#username').val();
+        var passid = $('#password').val();
+        if((userid == '')||(passid == '')){
+            alert("Username dan Password belum diisi");
+            return false;
+        }
+        $.ajax({
+           url:"cek_login.php",
+           method:"POST",
+           data: {userid : userid, passid: passid},
+           success:function (respon) {
+               if(respon == 'false'){
+                   alert("Username dan password anda salah!!!");
+                   return false;
+               }else{
+                   window.location.href='home';
+               }
+           }
+        });
     });
     </script>
 </body>
