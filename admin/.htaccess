@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^home$ index.php [L]
+RewriteRule ^login$ login.php [L]
+RewriteRule ^([a-z]+)?$ index.php?page=$1 [L]
+RewriteRule ^([a-z]+)-([a-z]+)?$ index.php?page=$1&ct=$2 [L]
+RewriteRule ^([a-z]+)-([a-z]+)-([0-9]+) index.php?page=$1&ct=$2&id=$3 [L]
+
+Options All -Indexes
