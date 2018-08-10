@@ -208,13 +208,13 @@ if((!isset($_GET['ct']))||(isset($_GET['ct'])=='')){
    	  	  	 	 <h4 class="card-title">Edit Akademik</h4>
    	  	  	 </div>
              <hr />
-   	  	  	 <form class="form-horizontal" action='aksi.php?page=profil&a=editprofil' method="POST" enctype="multipart/form-data" novalidate>
+   	  	  	 <form class="form-horizontal" action='aksi.php?page=akademik&a=editakademik' method="POST" enctype="multipart/form-data" novalidate>
    	  	  	 	<input type="hidden" name="id" value="<?php echo $e['id_akademik'];?>">
    	  	  	    <div class="card-body">
                   <div class="form-group row">
                     <label for="kat" class="col-sm-3 text-right control-label col-form-label">Kategori</label>
                     <div class="col-sm-5 controls">
-                         <select class="select2 form-control custom-select" style="width: 100%; height: 36px;">
+                         <select name="kat" id="kat" class="select2 form-control custom-select" style="width: 100%; height: 36px;">
                               <?php
                                   $kat = $db->show_data("kat_akademik");
                                   foreach ($kat as $k) {

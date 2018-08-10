@@ -9,7 +9,7 @@
 //    File export                              //
 //=============================================//
 $('#file_export').DataTable({
-    dom: 'Bfrtip',
+    dom: 'lBfrtip',
     buttons: [
         'copy', 'csv', 'excel', 'pdf', 'print'
     ]

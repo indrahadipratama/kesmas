@@ -78,13 +78,13 @@
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
-                                    <a href="app-chats.html" class="sidebar-link">
+                                    <a href="katpengumuman" class="sidebar-link">
                                         <i class="mdi mdi-comment-processing-outline"></i>
                                         <span class="hide-menu"> Kategori </span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="app-calendar.html" class="sidebar-link">
+                                    <a href="pengumuman" class="sidebar-link">
                                         <i class="mdi mdi-calendar"></i>
                                         <span class="hide-menu"> Pengumuman </span>
                                     </a>
@@ -98,15 +98,35 @@
                             </a>
                             <ul aria-expanded="false" class="collapse first-level">
                                 <li class="sidebar-item">
-                                    <a href="ui-buttons.html" class="sidebar-link">
+                                    <a href="kataktivitas" class="sidebar-link">
                                         <i class="mdi mdi-toggle-switch"></i>
                                         <span class="hide-menu"> Kategori</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="ui-modals.html" class="sidebar-link">
+                                    <a href="aktivitas" class="sidebar-link">
                                         <i class="mdi mdi-tablet"></i>
                                         <span class="hide-menu"> Aktivitas</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                                <i class="icon-Paint-Brush"></i>
+                                <span class="hide-menu">Sarana Umum </span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item">
+                                    <a href="katsarana" class="sidebar-link">
+                                        <i class="mdi mdi-toggle-switch"></i>
+                                        <span class="hide-menu"> Kategori</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="sarana" class="sidebar-link">
+                                        <i class="mdi mdi-tablet"></i>
+                                        <span class="hide-menu"> Sarana Umum</span>
                                     </a>
                                 </li>
                             </ul>
@@ -118,13 +138,13 @@
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
-                                    <a href="ui-cards.html" class="sidebar-link">
+                                    <a href="album" class="sidebar-link">
                                         <i class="mdi mdi-layers"></i>
                                         <span class="hide-menu"> Album</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="ui-card-customs.html" class="sidebar-link">
+                                    <a href="galeri" class="sidebar-link">
                                         <i class="mdi mdi-credit-card-scan"></i>
                                         <span class="hide-menu"> Galeri</span>
                                     </a>
@@ -142,25 +162,25 @@
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
-                                    <a href="component-sweetalert.html" class="sidebar-link">
+                                    <a href="katberita" class="sidebar-link">
                                         <i class="mdi mdi-layers"></i>
                                         <span class="hide-menu"> Kategori</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="component-nestable.html" class="sidebar-link">
+                                    <a href="berita" class="sidebar-link">
                                         <i class="mdi mdi-credit-card-scan"></i>
                                         <span class="hide-menu"> Berita</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="component-nestable.html" class="sidebar-link">
+                                    <a href="tag" class="sidebar-link">
                                         <i class="mdi mdi-credit-card-scan"></i>
                                         <span class="hide-menu"> Tag</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="component-nestable.html" class="sidebar-link">
+                                    <a href="komentar" class="sidebar-link">
                                         <i class="mdi mdi-credit-card-scan"></i>
                                         <span class="hide-menu"> Komentar</span>
                                     </a>
@@ -168,19 +188,19 @@
                             </ul>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark" href="download" aria-expanded="false">
                                 <i class="icon-Wrench"></i>
                                 <span class="hide-menu"> Download </span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="linkterkait" aria-expanded="false">
                                 <i class="icon-Sidebar-Window"></i>
                                 <span class="hide-menu"> Link Terkait </span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark" href="inbox" aria-expanded="false">
                                 <i class="icon-Files"></i>
                                 <span class="hide-menu">Inbox</span>
                             </a>
@@ -190,7 +210,7 @@
                             <span class="hide-menu">Konfigurasi</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="users" aria-expanded="false">
                                 <i class="icon-Receipt-4"></i>
                                 <span class="hide-menu">Users / Pengguna</span>
                             </a>
